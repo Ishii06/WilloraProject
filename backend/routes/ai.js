@@ -42,7 +42,7 @@ router.post("/analyze", authMiddleware, async (req, res) => {
 
   try {
     // Get the model
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     // Generate content with the default prompt + user journal
     const result = await model.generateContent(`${defaultPrompt}\n\nUser's journal entry:\n${journalText}`);
