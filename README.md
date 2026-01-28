@@ -5,8 +5,6 @@
 **WILLORA** is an AI-powered journaling web platform designed to help users express their thoughts freely while gaining **emotional insights and mood analysis** through AI.  
 The platform promotes **self-awareness, mental well-being, and community support**, while maintaining strong privacy and security for personal reflections.
 
-This project was developed as part of a **Web Development with MERN Stack Internship**.
-
 ---
 
 ## ✨ Key Features
@@ -82,9 +80,9 @@ npm install
 Create a `.env` file inside `/backend` with:
 
 ```env
+PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
 GOOGLE_GEN_AI_KEY=your_google_generative_ai_key
 ```
 # 🚀 Run Application
