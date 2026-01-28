@@ -56,9 +56,31 @@ This project was developed as part of a **Web Development with MERN Stack Intern
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Installation, Environment Setup & Running the Project
 
-### **1. Clone the Repository**
 ```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/yourusername/willora.git
 cd willora
+
+# 2️⃣ Install frontend dependencies
+cd frontend
+npm install
+
+# 3️⃣ Install backend dependencies
+cd ../backend
+npm install
+
+# 4️⃣ Create environment variables
+# Create a .env file inside /backend and add:
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+# OPENAI_API_KEY=your_openai_api_key
+# GOOGLE_GEN_AI_KEY=your_google_generative_ai_key
+
+# 5️⃣ Start backend server
+npm start
+
+# 6️⃣ Start frontend server (open a new terminal)
+cd ../frontend
+npm run dev
