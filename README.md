@@ -56,31 +56,63 @@ This project was developed as part of a **Web Development with MERN Stack Intern
 
 ---
 
-## ⚙️ Installation, Environment Setup & Running the Project
+## ⚙️ Setup  
 
+### **1. Clone Repository**
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/yourusername/willora.git
-cd willora
+git https://github.com/Ishii06/WilloraProject.git
+cd WilloraProject
+```
+### **2. Install Dependencies**
 
-# 2️⃣ Install frontend dependencies
+### Frontend
+```bash
 cd frontend
 npm install
+```
 
-# 3️⃣ Install backend dependencies
-cd ../backend
+### Backend
+```bash
+cd backend
 npm install
+```
 
-# 4️⃣ Create environment variables
-# Create a .env file inside /backend and add:
-# MONGO_URI=your_mongodb_connection_string
-# JWT_SECRET=your_jwt_secret
-# OPENAI_API_KEY=your_openai_api_key
-# GOOGLE_GEN_AI_KEY=your_google_generative_ai_key
+## **3. Environment Variables**
 
-# 5️⃣ Start backend server
-npm start
+Create a `.env` file inside `/backend` with:
 
-# 6️⃣ Start frontend server (open a new terminal)
-cd ../frontend
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+OPENAI_API_KEY=your_openai_api_key
+GOOGLE_GEN_AI_KEY=your_google_generative_ai_key
+```
+# 🚀 Run Application
+
+### Backend
+```bash
+cd backend
 npm run dev
+```
+
+```bash
+cd frontend
+npm run dev
+```
+
+# 🔄 Application Workflow
+
+- **User Authentication** – Secure login/signup with JWT  
+- **Private Journaling** – Users write diary entries securely
+- **AI Emotional Analysis** – AI processes text to detect mood & emotions
+- **Community Space** – Users share thoughts and engage respectfully
+- **Wellness Resources** – Access curated mental health content
+---
+
+# 🌟 Future Enhancements
+
+1. 📈 **Advanced emotion trend analytics** – Visualize emotional changes over weeks and months to identify recurring patterns
+2. 🧘 **Personalized wellness recommendations** – AI-suggested self-care activities, articles, and mindfulness practices based on user mood and journaling patterns
+3. 🌐 **Multi-Language Support** – Enable journaling and community interaction in multiple languages
+4. 🤝 **Peer Support Circles** – Small, moderated groups for shared emotional experiences  
+5. 🎙️ **Voice-to-Journal** – Convert voice notes into journal entries with emotion detection
